@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Green Remedy</title>
+    <link rel="stylesheet" href="css/news.css">
+     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    
+     <div id="navbar-container"></div>
+    <!-- ===== AGEGATE ===== -->
+    <section id="agegate"></section>
+
+    <section class="news-banner">
+        <div class="news-banner-inner">
+            <h1 class="news-title">Cannabis News - Green Remedy In Richmond</h1>
+        </div>
+    </section>
+    <section class="news-main">
+        <div class="news-container">
+            <h2>WHAT'S UP @ GREENREMEDY</h2>
+            <div>
+                <div class="news-grid" id="news-grid">
+                    
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="" aria-label="Next Page">
+                    <div class="next-btn-text">Next</div>
+                    <svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+                        <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+     <section id="footer-container"></section>
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+
+                initMobileMenu();
+            });
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+    <script src="script/navabar.js"></script>
+    <script src="script/agegate.js"></script>
+    <script src="script/blog-data.js"></script>
+    <script src="script/news.js"></script>
+</body>
+</html>

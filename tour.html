@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour - Green Remedy</title>
+    <link rel="stylesheet" href="css/tour.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <!-- ===== AGEGATE ===== -->
+    <section id="agegate"></section>
+
+    <section class="tour-banner">
+        <div class="tour-banner-inner">
+            <h1 class="tour-title">JOIN A BEHIND-THE- SCENES TOUR</h1>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="inner-content">
+            <div class="main-content">
+                <p>The Parkway Theater sat empty and neglected for over ten years - but work is now underway to give it a new lease of life as a cannabis consumption lounge, and if you want to take a look at the renovations so far, behind the scenes tours of the theater are now available.<br><br>Tours run all day Saturday and all day Sunday from 10am - 4pm. Tours meet in the lobby on the hour and half hour. Last tour leaves at 4pm. Must be 21+ or 18+ with medical card.</p>
+            </div>
+        </div>
+    </section>
+
+     <section id="footer-container"></section>
+     <script src="script/faq.js"></script>
+      <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+
+                initMobileMenu();
+            });
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

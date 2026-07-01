@@ -1,0 +1,299 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scrollbar-width: none;
+    --white: #fff;
+    --GreenRemedyGreen: #78be41;
+    --GreenRemedyYellow: #ffdb1d;
+    --black: #000;
+    --midnight: #0b1335;
+}
+
+.shop-banner {
+    background-image: url('../res/contact-banner.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 649px;
+    padding-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 2s;
+}
+
+.shop-banner-inner {
+    margin-top: 125px;
+}
+
+.shop-banner h1 {
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop-container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-left: 118px;
+    padding-right: 118px;
+}
+
+.frame {
+    width: 100%;
+    max-width: 1684px;
+}
+
+.main-frame {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+}
+
+
+/* ==========================
+   1440px
+========================== */
+
+@media (max-width: 1440px) {
+
+    .shop-container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .shop-banner h1 {
+        font-size: 54px;
+        line-height: 72px;
+    }
+
+}
+
+
+/* ==========================
+   1200px
+========================== */
+
+@media (max-width: 1200px) {
+
+    .shop-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .shop-banner {
+        height: 560px;
+    }
+
+    .shop-banner-inner {
+        margin-top: 90px;
+    }
+
+    .shop-banner h1 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    .main-frame {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+}
+
+
+/* ==========================
+   992px
+========================== */
+
+@media (max-width: 992px) {
+
+    .shop-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .shop-banner {
+        height: 500px;
+    }
+
+    .shop-banner h1 {
+        font-size: 42px;
+        line-height: 56px;
+    }
+
+}
+
+
+/* ==========================
+   768px
+========================== */
+
+@media (max-width: 768px) {
+
+    .shop-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .shop-banner {
+        height: 420px;
+    }
+
+    .shop-banner-inner {
+        margin-top: 60px;
+    }
+
+    .shop-banner h1 {
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    .main-frame {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+}
+
+
+/* ==========================
+   576px
+========================== */
+
+@media (max-width: 576px) {
+
+    .shop-container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .shop-banner {
+        height: 360px;
+    }
+
+    .shop-banner-inner {
+        margin-top: 40px;
+    }
+
+    .shop-banner h1 {
+        font-size: 28px;
+        line-height: 38px;
+        width: 100%;
+    }
+
+    .main-frame {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/* ==========================
+   425px
+========================== */
+
+@media (max-width: 425px) {
+
+    .shop-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .shop-banner {
+        height: 320px;
+    }
+
+    .shop-banner h1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .shop-banner-inner {
+        margin-top: 30px;
+    }
+
+}
+
+
+/* ==========================
+   375px
+========================== */
+
+@media (max-width: 375px) {
+
+    .shop-banner {
+        height: 300px;
+    }
+
+    .shop-banner h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .shop-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+}
+
+
+/* ==========================
+   320px
+========================== */
+
+@media (max-width: 320px) {
+
+    .shop-banner {
+        height: 280px;
+    }
+
+    .shop-banner-inner {
+        margin-top: 20px;
+    }
+
+    .shop-banner h1 {
+        font-size: 20px;
+        line-height: 28px;
+        word-break: break-word;
+    }
+
+    .shop-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .main-frame {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+}

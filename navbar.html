@@ -1,0 +1,68 @@
+<section class="header">
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+
+            <div class="nav-logo">
+                <img src="res/green-logo.webp" alt="Green Remedy Logo" class="dekstop-logo">
+                <img src="res/GreenRemedywhitelogo.avif" alt="Green Remedy Logo" class="mobile-logo">
+            </div>
+
+            <ul class="nav-right">
+                <li><a href="location.html">Location</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="nav-btn-container">
+                    <button class="nav-btn">Order Online</button>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </div>
+            </ul>
+
+            <!-- Hamburger — visible only on mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </section>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
+        <!-- Close (×) button — top-right corner -->
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu">
+            &times;
+        </button>
+
+        <!-- Logo centred at top -->
+        <div class="mobile-menu-logo">
+            <img src="res/green-logo.webp" alt="Green Remedy">
+        </div>
+
+        <!-- Nav links stacked -->
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="#" class="mobile-nav-link">Menu</a></li>
+            <li><a href="#" class="mobile-nav-link">News</a></li>
+            <li><a href="location.html" class="mobile-nav-link">Location</a></li>
+            <li><a href="#" class="mobile-nav-link">Contact</a></li>
+        </ul>
+
+        <!-- CTA row — yellow button + cart -->
+        <div class="mobile-menu-cta">
+            <button class="mobile-order-btn">Order Online</button>
+            <a href="#" class="mobile-cart-btn" aria-label="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semi-transparent backdrop -->
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+</body>
+</html>
